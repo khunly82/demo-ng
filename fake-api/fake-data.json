@@ -1,0 +1,23 @@
+{
+  "persons": [
+    {
+      "id": 1,
+      "name": "Khun",
+      "address": "Chaussée de Dinant 634b, 5100 Wépion",
+      "next": 2
+    },
+    {
+      "id": 2,
+      "name": "Piu",
+      "address": "Rue de l'aise 42, Jemeppe sur sambre",
+      "next": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "l@j.be",
+      "password": "$2a$10$hngs9KnFeZkYzReTtLzluuYBTCGYY8l.mYduzEMf4nkCtgfABJDh6",
+      "id": 1
+    }
+  ]
+}

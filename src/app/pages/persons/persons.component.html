@@ -1,0 +1,5 @@
+<ul>
+  @for (item of persons$|async; track item.id) {
+    <li><a [routerLink]="['/person', item.id, 41]">{{ item.name }}</a></li>
+  }
+</ul>

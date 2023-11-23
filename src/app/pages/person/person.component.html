@@ -1,0 +1,11 @@
+@if (person && options) {
+  {{ test }}
+  <div>
+    <p>{{person.name}}</p>
+    <p>{{person.address}}</p>
+  </div>
+
+  <div class="map" leaflet [leafletOptions]="options" (leafletMapReady)="initMap($event)"></div>
+
+  <a [routerLink]="['/person', person.next, 42]">-></a>   
+}
