@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import { map } from 'rxjs';
+import { Test } from '../app.module';
 
 @Injectable({
   providedIn: 'root'
@@ -8,8 +9,11 @@ import { map } from 'rxjs';
 export class PersonService {
 
   constructor(
-    private readonly _http: HttpClient
-  ) { }
+    private readonly _http: HttpClient,
+    @Inject('test') a : number,
+    @Inject('test2') b : {val: number},
+    t: Test,
+  ) { console.log(a, b, t) }
 
   get() {
     return this._http.get<any[]>('http://localhost:3000/persons');
